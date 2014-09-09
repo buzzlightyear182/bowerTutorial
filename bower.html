@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  
+  <h1>The Me-Guide to Bower</h1>
+
+  <h2>What is Bower and Why</h2>
+
+    <p> Web sites are made of lots of things (frameworks, libraries, assets...).  Lets say that we want to use bootstrap, jquery, and less in our website.  Instead of going to every of those websites and download them directly, we can do it with Bower </p>
+
+    <p> Bower is a package manager. It fetches all the packages you need, it downloads and installs them for you. </p>
+
+  <h2> How to Bower </h2>
+
+  <h3>Install Bower </h3>
+  
+    <p>$ npm install -g bower </p>
+    <p>(It requires Node, Npm and Git)</p>
+
+  <h3>Check version</h3>
+    <p>$ bower --v </p>
+
+  <h3>Search Packages</h3>
+    
+    <p>Now you can already look for all those frameworks, libraries and assets you want to have in your application. Probably these are some of the ones you want: Bootstrap, Jquery, Fontawesome, Modernizr...</p>
+
+    <p>For the full list of packages go to this <a href="http://bower.io/search/">link</a></p>
+
+    <h4>How does your folder look like?</h4>
+      <p>So far you have not installed anything so apart from the files and folders you created there is nothing there. So lets install some things.</p>
+
+  <h3>Install the Packages!</h3>
+
+    <p>Once you have decided which packages you need, you can easily install them.  Usually using the package name:</p>
+
+    <p>$ bower install "package-name"</p>
+
+    <p>$ bower install jquery </p>
+
+    <h4>How does your folder look like?</h4>
+    <p>You now have a folder called "bower_components".  Inside it one folder per installed package</p>
+
+  <h3>Save your Packages</h3>
+
+      <p>If you want you can save your packages so that others can use them and install them easily</p>
+
+      <p>$ bower init</p>
+      
+      <p>This will create a file called bower.json.  This file is where Bower keeps track of your packages</p>
+
+      <p>It will ask you a set of questions starting with the name you want to give your package.  Press enter to all question if you want to choose the default options.  For further information follow this <a href="http://bower.io/docs/creating-packages/#bowerjson">link</a></p>
+
+      <p>From this moment on, you should either save any new intalled package in the json:</p>
+
+      <p>$ bower install jquery --save </p>
+
+      <p>or run bower init again to refresh the json file</p>
+      
+      <p>$ bower init</p>
+
+      <h4>How does your folder look like?</h4>
+      
+      <p>You now have the folder called "bower_components", and a file called "bower.json". This is the file where Bower keeps track of your chosen packages</p>
+
+  <h3>Share your packages</h3>
+
+
+
+</body>
+</html>
